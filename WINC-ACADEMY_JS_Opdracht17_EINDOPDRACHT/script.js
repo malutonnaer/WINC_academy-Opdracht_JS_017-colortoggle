@@ -1,6 +1,11 @@
+const toggleBtn = document.querySelector(".btn-toggle-nav");
+toggleBtn.addEventListener("click", () => {
+	toggleNav();
+});
+
 let toggleNavStatus = false;
 
-let toggleNav = function () {
+const toggleNav = function () {
     // let getSidebar = document.querySelector(".nav-sidebar");
     let getSidebarUl = document.querySelector(".nav-sidebar ul");
 
@@ -13,40 +18,48 @@ let toggleNav = function () {
     }
 };
 
-
 const bodyElement = document.body;
-
-var linkHome = document.querySelector("li:nth-child(1)");
+const linkHome = document.querySelector("li:nth-child(1)");
 
 linkHome.addEventListener("click", changeBackgroundHome);
 function changeBackgroundHome() {
-    bodyElement.classList.add("bg-grey");
+    bodyElement.removeAttribute('class');
+	bodyElement.classList.add("bg-grey");
+	toggleNav();
 };
 
-var linkRed = document.querySelector("li:nth-child(2)");
+const linkRed = document.querySelector("li:nth-child(2)");
 
 linkRed.addEventListener("click", changeBackgroundRed);
-function changeBackgroundRed () {
+function changeBackgroundRed() {
+    bodyElement.removeAttribute('class');
     bodyElement.classList.add("bg-red");
+    toggleNav();
 };
 
-var linkOrange = document.querySelector("li:nth-child(3)");
+const linkOrange = document.querySelector("li:nth-child(3)");
 
 linkOrange.addEventListener("click", changeBackgroundRed);
-function changeBackgroundRed () {
+function changeBackgroundRed() {
+    bodyElement.removeAttribute('class');
     bodyElement.classList.add("bg-orange");
+    toggleNav();
 }
 
-var linkViolet = document.querySelector("li:nth-child(4)");
+const linkViolet = document.querySelector("li:nth-child(4)");
 
 linkViolet.addEventListener("click", changeBackgroundRed);
-function changeBackgroundRed () {
+function changeBackgroundRed() {
+    bodyElement.removeAttribute('class');
     bodyElement.classList.add("bg-violet");
+    toggleNav();
 }
 
-var linkAquamarine = document.querySelector("li:nth-child(5)");
+const linkAquamarine = document.querySelector("li:nth-child(5)");
 
 linkAquamarine.addEventListener("click", changeBackgroundRed);
-function changeBackgroundRed () {
+function changeBackgroundRed() {
+    bodyElement.removeAttribute('class');
     bodyElement.classList.add("bg-aquamarine");
+    toggleNav();
 }
