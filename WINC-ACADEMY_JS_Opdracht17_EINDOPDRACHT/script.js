@@ -39,8 +39,8 @@ function changeBackgroundRed() {
 
 const linkOrange = document.querySelector("li:nth-child(3)");
 
-linkOrange.addEventListener("click", changeBackgroundRed);
-function changeBackgroundRed() {
+linkOrange.addEventListener("click", changeBackgroundOrange);
+function changeBackgroundOrange() {
     bodyElement.removeAttribute('class');
     bodyElement.classList.add("bg-orange");
     toggleNav();
@@ -48,8 +48,8 @@ function changeBackgroundRed() {
 
 const linkViolet = document.querySelector("li:nth-child(4)");
 
-linkViolet.addEventListener("click", changeBackgroundRed);
-function changeBackgroundRed() {
+linkViolet.addEventListener("click", changeBackgroundViolet);
+function changeBackgroundViolet() {
     bodyElement.removeAttribute('class');
     bodyElement.classList.add("bg-violet");
     toggleNav();
@@ -57,8 +57,8 @@ function changeBackgroundRed() {
 
 const linkAquamarine = document.querySelector("li:nth-child(5)");
 
-linkAquamarine.addEventListener("click", changeBackgroundRed);
-function changeBackgroundRed() {
+linkAquamarine.addEventListener("click", changeBackgroundAqua);
+function changeBackgroundAqua() {
     bodyElement.removeAttribute('class');
     bodyElement.classList.add("bg-aquamarine");
     toggleNav();
